@@ -11,6 +11,6 @@ $coreCommentValidator = new CoreCommentValidator(new ValidateApplicator());
 $comment = new CommentModel();
 // Change this string to test the app. you can use the component 
 // in any way you want. this is just a test.
-$comment->setText("Violated word 1 1234567");
+$comment->setText("Violated wo1rd 1");
 
 echo $coreCommentValidator->validate($comment) ? "Is Valid!\n" : "Violated!\n";
