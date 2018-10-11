@@ -2,6 +2,9 @@
 
 namespace FaraketTestProj\Component\Comment\Validator;
 
+/**
+ * Validate the given content by violated sentence or string.
+ */
 class ViolatedWordValidator extends AbstractCommentValidator
 {
     const DEFAULT_VIOLATED_WORDS_FA = ["کلمه غیر مجاز", "کلمه غیر مجاز 1", "کلمه غیر مجاز 2"];
@@ -20,7 +23,7 @@ class ViolatedWordValidator extends AbstractCommentValidator
         return true;
     }
 
-    private function isContentValid(array $violatedWords, $content)
+    private function isContentValid(array $violatedWords, $content) : bool
     {
         foreach ($violatedWords as $violatedWord) {
             if (strpos($content, $violatedWord) !== false) {

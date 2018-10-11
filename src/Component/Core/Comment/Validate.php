@@ -6,6 +6,10 @@ use FaraketTestProj\Component\Metadata\Loader;
 use FaraketTestProj\Component\Comment\ICommentModel;
 use FaraketTestProj\Component\Comment\IValidateApplicator;
 
+/**
+ * Inject validators to the validateApplicator by usign loader component
+ * and all classes in the src\Component\Comment\Validator directory.
+ */
 final class Validate
 {
     private $validators;
@@ -24,7 +28,7 @@ final class Validate
         return $this->validateApplicator->validate($comment);
     }
 
-    private function loadValidators()
+    private function loadValidators() : void
     {
         $allCommentValidatorsClassNames = Loader::getInstance()->getClassNames();
 
@@ -33,7 +37,7 @@ final class Validate
         }
     }
 
-    private function registerValidators()
+    private function registerValidators() : void
     {
         foreach ($this->validators as $validator) {
             $this->validateApplicator->addValidator($validator);

@@ -2,6 +2,9 @@
 
 namespace FaraketTestProj\Component\Comment;
 
+/**
+ * Basic model for comment.
+ */
 class CommentModel implements ICommentModel
 {
     /**

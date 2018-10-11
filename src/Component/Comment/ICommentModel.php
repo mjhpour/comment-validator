@@ -2,6 +2,9 @@
 
 namespace FaraketTestProj\Component\Comment;
 
+/**
+ * Comment
+ */
 interface ICommentModel
 {
     public function setText(string $test) : ICommentModel;
