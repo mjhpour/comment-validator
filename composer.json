@@ -1,0 +1,21 @@
+{
+    "authors": [
+        {
+            "name": "Mohammad Javad Hosein Pour",
+            "email": "mjavadhpour@gmail.com",
+            "homepage": "https://www.linkedin.com/in/mjavadhpour/",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "mjavadhpour@gmail.com"
+    },
+    "license": [
+        "WTFPL"
+     ],
+     "autoload": {
+        "psr-4": {
+            "FaraketTestProj\\":"src/"
+        }
+    }
+}
