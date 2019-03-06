@@ -9,7 +9,7 @@ namespace FaraketTestProj\Component\Comment\Validator;
 class CommentLengthValidator extends AbstractCommentValidator
 {
     // Maximum allowed length.
-    const DEFAULT_CONTENT_LENGTH = 50;
+    const DEFAULT_CONTENT_LENGTH = 5;
 
     public function isValid($content) : bool
     {
