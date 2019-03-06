@@ -13,4 +13,4 @@ $comment = new CommentModel();
 // in any way you want. this is just a test.
 $comment->setText("Violated j");
 
-echo $coreCommentValidator->validate($comment) ? "Is Valid!\n" : "Violated!\n";
+echo $coreCommentValidator->validate($comment) ? "Is Valid!\n" : "Violated!!\n";
